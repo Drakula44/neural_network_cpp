@@ -1,4 +1,3 @@
-#include "../headers/kocka.h"
 #include <bits/stdc++.h>
 using namespace std;
 Matrica::Matrica()
