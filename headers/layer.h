@@ -1,9 +1,9 @@
 #include "node.h"
 #include <bits/stdc++.h>
-class layer: public node{
-	node neuron[750];//niz neurona
+class layer{
+	node neuron[800];//niz neurona
 	int k;//broj neurona u jednom layeru
 	public:
-		void calc_n(int i);//racuna vrednost u ovom cvoru u zavisnosti od cvorova prethodnog layera
-		
+		layer(int l, int post_n, double a[]);//konstruktor sloja u zavisnosti od broja cvorova-l
+		void calc(layer pre,  int i);//racuna vrednost u i-tom cvoru u zavisnosti od cvorova prethodnog layera
 };
