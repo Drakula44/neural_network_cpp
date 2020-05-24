@@ -8,7 +8,7 @@ void node::init(double v1,int n1){
 	n=n1;
 	for(int i=0;i<=n;i++){
 		w[i]=rand()/pow(10,8);
-		cout<<w[i]<<endl;
+		//cout<<w[i]<<endl;
 	}
 }
 double node::activate(double x){

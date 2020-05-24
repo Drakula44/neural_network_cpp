@@ -6,8 +6,9 @@ layer::layer(int l, int post_n, double a[]){
 		node c;
 		c.init(a[i],post_n);
 		neuron[i]=c;
+		cout<<"ok";
 	}
-
+    cout<<endl;
 }
 void layer::calc(layer pre, int i){
 	double sum=neuron[i].b;
@@ -15,4 +16,5 @@ void layer::calc(layer pre, int i){
 		sum+=pre.neuron[j].w[i]*pre.neuron[j].v;
 	}
 	neuron[i].activate(sum);
+	cout<<neuron[i].v<<endl;
 }
