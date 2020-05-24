@@ -12,7 +12,7 @@ void node::init(double v1,int n1){
 	}
 }
 double node::activate(double x){
-	v=1/(1+pow(e,-x));
+	v=1/(1+pow(e,-x));//zasada je sigmoid
 	return v;
 }
 const node& node::operator=(const node &p){
